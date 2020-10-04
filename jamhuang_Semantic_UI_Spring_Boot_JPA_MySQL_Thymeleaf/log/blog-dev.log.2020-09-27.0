@@ -1,0 +1,590 @@
+2020-09-27 22:17:33.230  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 852 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:17:33.234 DEBUG 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:17:33.234  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:17:33.296  INFO 852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 22:17:33.302  INFO 852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 22:17:34.477  INFO 852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:17:34.487  INFO 852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:17:34.488  INFO 852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:17:34.575  INFO 852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:17:34.576  INFO 852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1274 ms
+2020-09-27 22:17:34.777  INFO 852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:17:34.894  WARN 852 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-09-27 22:17:35.045  INFO 852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:17:35.093  INFO 852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:17:35.108  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 2.492 seconds (JVM running for 3.782)
+2020-09-27 22:18:04.110  INFO 852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:18:04.111  INFO 852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:18:04.119  INFO 852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-09-27 22:23:52.531  INFO 852 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:23:52.705  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 852 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:23:52.705 DEBUG 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:23:52.705  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:23:53.157  INFO 852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:23:53.158  INFO 852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:23:53.158  INFO 852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:23:53.183  INFO 852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:23:53.183  INFO 852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 473 ms
+2020-09-27 22:23:53.280  INFO 852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:23:53.298  INFO 852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:23:53.405  INFO 852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:23:53.427  INFO 852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:23:53.437  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 0.851 seconds (JVM running for 382.111)
+2020-09-27 22:23:53.440  INFO 852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-27 22:24:03.433  INFO 852 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:24:03.434  INFO 852 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:24:03.436  INFO 852 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-09-27 22:24:34.006  INFO 852 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:24:34.120  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 852 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:24:34.120 DEBUG 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:24:34.120  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:24:34.438  INFO 852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:24:34.440  INFO 852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:24:34.440  INFO 852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:24:34.470  INFO 852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:24:34.471  INFO 852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 346 ms
+2020-09-27 22:24:34.545  INFO 852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:24:34.565  INFO 852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:24:34.659  INFO 852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:24:34.683  INFO 852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:24:34.688  INFO 852 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 0.626 seconds (JVM running for 423.362)
+2020-09-27 22:24:34.690  INFO 852 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-27 22:24:38.228  INFO 852 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:24:38.229  INFO 852 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:24:38.234  INFO 852 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-09-27 22:26:03.371  INFO 16088 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 16088 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:26:03.375 DEBUG 16088 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:26:03.375  INFO 16088 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:26:03.429  INFO 16088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 22:26:03.429  INFO 16088 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 22:26:04.477  INFO 16088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:26:04.486  INFO 16088 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:26:04.486  INFO 16088 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:26:04.567  INFO 16088 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:26:04.567  INFO 16088 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1138 ms
+2020-09-27 22:26:04.743  INFO 16088 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:26:04.808  INFO 16088 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:26:04.989  INFO 16088 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:26:05.040  INFO 16088 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:26:05.055  INFO 16088 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 2.173 seconds (JVM running for 2.978)
+2020-09-27 22:26:08.279  INFO 16088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:26:08.280  INFO 16088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:26:08.287  INFO 16088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-09-27 22:26:08.319 ERROR 16088 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ArithmeticException: / by zero] with root cause
+
+java.lang.ArithmeticException: / by zero
+	at com.jamhuang.blog.controller.IndexController.index(IndexController.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2020-09-27 22:26:34.702  INFO 16576 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 16576 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:26:34.705 DEBUG 16576 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:26:34.706  INFO 16576 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:26:34.760  INFO 16576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 22:26:34.761  INFO 16576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 22:26:35.940  INFO 16576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:26:35.951  INFO 16576 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:26:35.951  INFO 16576 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:26:36.036  INFO 16576 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:26:36.037  INFO 16576 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1275 ms
+2020-09-27 22:26:36.231  INFO 16576 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:26:36.296  INFO 16576 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:26:36.486  INFO 16576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:26:36.540  INFO 16576 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:26:36.554  INFO 16576 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 2.393 seconds (JVM running for 3.25)
+2020-09-27 22:26:42.166  INFO 16576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:26:42.168  INFO 16576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:26:42.176  INFO 16576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-09-27 22:32:36.884  INFO 25472 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 25472 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:32:36.887 DEBUG 25472 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:32:36.888  INFO 25472 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:32:36.946  INFO 25472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 22:32:36.947  INFO 25472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 22:32:38.159  INFO 25472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:32:38.168  INFO 25472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:32:38.169  INFO 25472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:32:38.273  INFO 25472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:32:38.273  INFO 25472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1326 ms
+2020-09-27 22:32:38.464  INFO 25472 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:32:38.524  INFO 25472 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:32:38.712  INFO 25472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:32:38.762  INFO 25472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:32:38.778  INFO 25472 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 2.532 seconds (JVM running for 3.531)
+2020-09-27 22:33:05.330  INFO 25472 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:33:05.475  INFO 25472 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 25472 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:33:05.475 DEBUG 25472 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:33:05.475  INFO 25472 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:33:05.910  INFO 25472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:33:05.911  INFO 25472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:33:05.911  INFO 25472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:33:05.935  INFO 25472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:33:05.935  INFO 25472 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 454 ms
+2020-09-27 22:33:06.017  INFO 25472 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:33:06.039  INFO 25472 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:33:06.120  INFO 25472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:33:06.141  INFO 25472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:33:06.148  INFO 25472 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 0.776 seconds (JVM running for 30.9)
+2020-09-27 22:33:06.150  INFO 25472 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-27 22:33:13.456  INFO 25472 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:33:13.457  INFO 25472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:33:13.464  INFO 25472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-09-27 22:33:13.486 ERROR 25472 --- [http-nio-8080-exec-1] c.j.b.h.ControllerExceptionHandler       : Request URL : /, Exception : {}
+
+java.lang.ArithmeticException: / by zero
+	at com.jamhuang.blog.controller.IndexController.index(IndexController.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2020-09-27 22:33:13.492  WARN 25472 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArithmeticException: / by zero]
+2020-09-27 22:40:54.832  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 21680 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:40:54.835 DEBUG 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:40:54.835  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:40:54.896  INFO 21680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 22:40:54.896  INFO 21680 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 22:40:56.146  INFO 21680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:40:56.155  INFO 21680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:40:56.156  INFO 21680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:40:56.246  INFO 21680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:40:56.246  INFO 21680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1350 ms
+2020-09-27 22:40:56.454  INFO 21680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:40:56.528  INFO 21680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:40:56.712  INFO 21680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:40:56.785  INFO 21680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:40:56.799  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 2.515 seconds (JVM running for 3.422)
+2020-09-27 22:41:02.012  INFO 21680 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:41:02.013  INFO 21680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:41:02.021  INFO 21680 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-09-27 22:41:23.285  INFO 21680 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:41:23.367  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 21680 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:41:23.367 DEBUG 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:41:23.367  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:41:23.629  INFO 21680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:41:23.629  INFO 21680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:41:23.630  INFO 21680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:41:23.652  INFO 21680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:41:23.652  INFO 21680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 282 ms
+2020-09-27 22:41:23.713  INFO 21680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:41:23.727  INFO 21680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:41:23.801  INFO 21680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:41:23.815  INFO 21680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:41:23.821  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 0.503 seconds (JVM running for 30.444)
+2020-09-27 22:41:23.823  INFO 21680 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-27 22:41:26.329  INFO 21680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:41:26.330  INFO 21680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:41:26.332  INFO 21680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-09-27 22:41:26.337 ERROR 21680 --- [http-nio-8080-exec-1] c.j.b.h.ControllerExceptionHandler       : Request URL : /, Exception : {}
+
+java.lang.ArithmeticException: / by zero
+	at com.jamhuang.blog.controller.IndexController.index(IndexController.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2020-09-27 22:41:26.339  WARN 21680 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ArithmeticException: / by zero]
+2020-09-27 22:41:55.396  INFO 21680 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:41:55.493  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 21680 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:41:55.493 DEBUG 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:41:55.493  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:41:55.822  INFO 21680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:41:55.823  INFO 21680 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:41:55.823  INFO 21680 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:41:55.852  INFO 21680 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:41:55.852  INFO 21680 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 356 ms
+2020-09-27 22:41:55.917  INFO 21680 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:41:55.933  INFO 21680 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:41:56.014  INFO 21680 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:41:56.039  INFO 21680 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:41:56.044  INFO 21680 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 0.61 seconds (JVM running for 62.667)
+2020-09-27 22:41:56.046  INFO 21680 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2020-09-27 22:51:02.238  INFO 16928 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 16928 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 22:51:02.240 DEBUG 16928 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 22:51:02.241  INFO 16928 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 22:51:02.302  INFO 16928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 22:51:02.303  INFO 16928 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 22:51:03.448  INFO 16928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 22:51:03.458  INFO 16928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 22:51:03.459  INFO 16928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 22:51:03.536  INFO 16928 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 22:51:03.536  INFO 16928 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1233 ms
+2020-09-27 22:51:03.713  INFO 16928 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 22:51:03.777  INFO 16928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 22:51:03.956  INFO 16928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 22:51:04.009  INFO 16928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 22:51:04.032  INFO 16928 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 2.374 seconds (JVM running for 3.222)
+2020-09-27 22:51:10.264  INFO 16928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 22:51:10.265  INFO 16928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 22:51:10.272  INFO 16928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-09-27 22:51:10.292 ERROR 16928 --- [http-nio-8080-exec-1] c.j.b.h.ControllerExceptionHandler       : Request URL : /, Exception : {}
+
+com.jamhuang.blog.NotFoundException: 博客不存在
+	at com.jamhuang.blog.controller.IndexController.index(IndexController.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2020-09-27 22:51:10.296  WARN 16928 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Failure in @ExceptionHandler com.jamhuang.blog.handler.ControllerExceptionHandler#exceptionHandler(HttpServletRequest, Exception)
+
+java.lang.NullPointerException: null
+	at org.springframework.core.annotation.AnnotationsScanner.getDeclaredAnnotations(AnnotationsScanner.java:454)
+	at org.springframework.core.annotation.AnnotationsScanner.isKnownEmpty(AnnotationsScanner.java:492)
+	at org.springframework.core.annotation.TypeMappedAnnotations.from(TypeMappedAnnotations.java:251)
+	at org.springframework.core.annotation.MergedAnnotations.from(MergedAnnotations.java:351)
+	at org.springframework.core.annotation.MergedAnnotations.from(MergedAnnotations.java:330)
+	at org.springframework.core.annotation.AnnotationUtils.findAnnotation(AnnotationUtils.java:497)
+	at com.jamhuang.blog.handler.ControllerExceptionHandler.exceptionHandler(ControllerExceptionHandler.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:407)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:61)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:141)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1300)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1111)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+2020-09-27 22:51:10.298  WARN 16928 --- [http-nio-8080-exec-1] .w.s.m.a.ResponseStatusExceptionResolver : Resolved [com.jamhuang.blog.NotFoundException: 博客不存在]
+2020-09-27 23:05:14.429  INFO 12628 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 12628 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 23:05:14.432 DEBUG 12628 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 23:05:14.432  INFO 12628 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 23:05:14.489  INFO 12628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 23:05:14.490  INFO 12628 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 23:05:15.992  INFO 12628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 23:05:16.005  INFO 12628 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 23:05:16.006  INFO 12628 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 23:05:16.095  INFO 12628 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 23:05:16.095  INFO 12628 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1605 ms
+2020-09-27 23:05:16.514  INFO 12628 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 23:05:16.624  INFO 12628 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 23:05:17.067  INFO 12628 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 23:05:17.118  INFO 12628 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 23:05:17.131  INFO 12628 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 3.263 seconds (JVM running for 4.242)
+2020-09-27 23:05:33.510  INFO 12628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 23:05:33.511  INFO 12628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 23:05:33.525  INFO 12628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-09-27 23:05:33.555  INFO 12628 --- [http-nio-8080-exec-1] com.jamhuang.blog.aspect.LogAspect       : ----- doBefore -----
+2020-09-27 23:05:33.568  INFO 12628 --- [http-nio-8080-exec-1] com.jamhuang.blog.aspect.LogAspect       : Result : {}index
+2020-09-27 23:05:33.568  INFO 12628 --- [http-nio-8080-exec-1] com.jamhuang.blog.aspect.LogAspect       : ----- doAfter -----
+2020-09-27 23:13:37.715  INFO 3368 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 3368 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 23:13:37.719 DEBUG 3368 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 23:13:37.719  INFO 3368 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 23:13:37.776  INFO 3368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 23:13:37.777  INFO 3368 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 23:13:39.313  INFO 3368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 23:13:39.322  INFO 3368 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 23:13:39.323  INFO 3368 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 23:13:39.416  INFO 3368 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 23:13:39.416  INFO 3368 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1639 ms
+2020-09-27 23:13:39.782  INFO 3368 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 23:13:39.885  INFO 3368 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 23:13:40.265  INFO 3368 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 23:13:40.319  INFO 3368 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 23:13:40.334  INFO 3368 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 3.164 seconds (JVM running for 4.054)
+2020-09-27 23:13:53.236  INFO 3368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 23:13:53.237  INFO 3368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 23:13:53.252  INFO 3368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-09-27 23:13:53.285  INFO 3368 --- [http-nio-8080-exec-1] com.jamhuang.blog.aspect.LogAspect       : Request : RequestLog{url='/3/hello', ip='0:0:0:0:0:0:0:1', classMethod='com.jamhuang.blog.controller.IndexController.index', args=[3, hello]}
+2020-09-27 23:13:53.301  INFO 3368 --- [http-nio-8080-exec-1] com.jamhuang.blog.aspect.LogAspect       : Result : {}index
+2020-09-27 23:13:53.301  INFO 3368 --- [http-nio-8080-exec-1] com.jamhuang.blog.aspect.LogAspect       : ----- doAfter -----
+2020-09-27 23:14:37.473  INFO 3368 --- [http-nio-8080-exec-2] com.jamhuang.blog.aspect.LogAspect       : Request : RequestLog{url='/3/hello', ip='127.0.0.1', classMethod='com.jamhuang.blog.controller.IndexController.index', args=[3, hello]}
+2020-09-27 23:14:37.473  INFO 3368 --- [http-nio-8080-exec-2] com.jamhuang.blog.aspect.LogAspect       : Result : {}index
+2020-09-27 23:14:37.473  INFO 3368 --- [http-nio-8080-exec-2] com.jamhuang.blog.aspect.LogAspect       : ----- doAfter -----
+2020-09-27 23:37:02.171  INFO 25372 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 25372 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 23:37:02.175 DEBUG 25372 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 23:37:02.175  INFO 25372 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 23:37:02.241  INFO 25372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 23:37:02.242  INFO 25372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 23:37:03.657  INFO 25372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 23:37:03.667  INFO 25372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 23:37:03.667  INFO 25372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 23:37:03.765  INFO 25372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 23:37:03.766  INFO 25372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1524 ms
+2020-09-27 23:37:04.111  INFO 25372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 23:37:04.206  INFO 25372 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 23:37:04.592  INFO 25372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 23:37:04.655  INFO 25372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 23:37:04.669  INFO 25372 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 3.062 seconds (JVM running for 3.912)
+2020-09-27 23:37:10.059  INFO 25372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-27 23:37:10.060  INFO 25372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-27 23:37:10.075  INFO 25372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-27 23:37:12.338  INFO 25372 --- [http-nio-8080-exec-2] com.jamhuang.blog.aspect.LogAspect       : Request : RequestLog{url='/', ip='127.0.0.1', classMethod='com.jamhuang.blog.controller.IndexController.index', args=[]}
+2020-09-27 23:37:12.352  INFO 25372 --- [http-nio-8080-exec-2] com.jamhuang.blog.aspect.LogAspect       : Result : {}index
+2020-09-27 23:37:12.352  INFO 25372 --- [http-nio-8080-exec-2] com.jamhuang.blog.aspect.LogAspect       : ----- doAfter -----
+2020-09-27 23:38:55.275  INFO 22716 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 22716 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 23:38:55.280 DEBUG 22716 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 23:38:55.281  INFO 22716 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 23:38:55.353  INFO 22716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 23:38:55.354  INFO 22716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 23:38:56.834  INFO 22716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 23:38:56.844  INFO 22716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 23:38:56.844  INFO 22716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 23:38:56.924  INFO 22716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 23:38:56.924  INFO 22716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1570 ms
+2020-09-27 23:38:57.237  INFO 22716 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 23:38:57.337  INFO 22716 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 23:38:57.735  INFO 22716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 23:38:57.790  INFO 22716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 23:38:57.803  INFO 22716 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 3.267 seconds (JVM running for 4.295)
+2020-09-27 23:49:54.272  INFO 2684 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 2684 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 23:49:54.274 DEBUG 2684 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 23:49:54.275  INFO 2684 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 23:49:54.336  INFO 2684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 23:49:54.337  INFO 2684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 23:49:55.713  INFO 2684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 23:49:55.727  INFO 2684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 23:49:55.727  INFO 2684 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 23:49:55.805  INFO 2684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 23:49:55.805  INFO 2684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1468 ms
+2020-09-27 23:49:56.129  INFO 2684 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 23:49:56.234  INFO 2684 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 23:49:56.664  INFO 2684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 23:49:56.720  INFO 2684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 23:49:56.734  INFO 2684 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 3.0 seconds (JVM running for 4.029)
+2020-09-27 23:58:05.452  INFO 2840 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Starting BlogApplication on DESKTOP-VPQ9L1O with PID 2840 (D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf\target\classes started by otaku in D:\Projects\Idea\jamhuang_Semantic_UI_Spring_Boot_JPA_MySQL_Thymeleaf)
+2020-09-27 23:58:05.456 DEBUG 2840 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-09-27 23:58:05.456  INFO 2840 --- [restartedMain] com.jamhuang.blog.BlogApplication        : The following profiles are active: dev
+2020-09-27 23:58:05.614  INFO 2840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-27 23:58:05.615  INFO 2840 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-27 23:58:06.931  INFO 2840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-27 23:58:06.940  INFO 2840 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-27 23:58:06.940  INFO 2840 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-27 23:58:07.019  INFO 2840 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-27 23:58:07.019  INFO 2840 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1403 ms
+2020-09-27 23:58:07.323  INFO 2840 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-27 23:58:07.429  INFO 2840 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-27 23:58:07.815  INFO 2840 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-27 23:58:07.869  INFO 2840 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-27 23:58:07.880  INFO 2840 --- [restartedMain] com.jamhuang.blog.BlogApplication        : Started BlogApplication in 3.009 seconds (JVM running for 3.96)

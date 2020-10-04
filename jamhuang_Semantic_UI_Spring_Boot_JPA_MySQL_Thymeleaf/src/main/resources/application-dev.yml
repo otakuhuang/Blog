@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/jamhuang_blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT
+    username: root
+    password: am2w5tfx
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database: mysql
+
+logging:
+  level:
+    root: info
+    com.jamhuang: debug
+  file:
+    name: log/blog-dev.log
+
+server:
+  port: 8080
