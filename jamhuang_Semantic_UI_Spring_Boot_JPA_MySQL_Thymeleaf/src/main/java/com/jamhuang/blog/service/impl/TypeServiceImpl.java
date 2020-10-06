@@ -4,6 +4,7 @@ import com.jamhuang.blog.NotFoundException;
 import com.jamhuang.blog.dao.TypeRepository;
 import com.jamhuang.blog.entity.Type;
 import com.jamhuang.blog.service.TypeService;
+import com.jamhuang.blog.utils.MyBeanUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -25,7 +26,7 @@ public class TypeServiceImpl implements TypeService {
     @Transactional
     @Override
     public Type saveType(Type type) {
-        if (type.getId()==null){
+        if (type.getId() == null) {
             type.setCreateTime(new Date());
             type.setUpdateTime(new Date());
         } else {
@@ -70,7 +71,8 @@ public class TypeServiceImpl implements TypeService {
         if (t == null) {
             throw new NotFoundException("不存在该分类");
         }
-        BeanUtils.copyProperties(type, t);
+        BeanUtils.copyProperties(type, t, MyBeanUtils.getNullPropertyNames(type));
+        t.setUpdateTime(new Date());
         return typeRepository.save(t);
     }
 

@@ -4,6 +4,7 @@ import com.jamhuang.blog.NotFoundException;
 import com.jamhuang.blog.dao.TagRepository;
 import com.jamhuang.blog.entity.Tag;
 import com.jamhuang.blog.service.TagService;
+import com.jamhuang.blog.utils.MyBeanUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -107,7 +108,8 @@ public class TagServiceImpl implements TagService {
         if (t == null) {
             throw new NotFoundException("不存在该分类");
         }
-        BeanUtils.copyProperties(tag, t);
+        BeanUtils.copyProperties(tag, t, MyBeanUtils.getNullPropertyNames(tag));
+        t.setUpdateTime(new Date());
         return tagRepository.save(t);
     }
 

@@ -5,6 +5,7 @@ import com.jamhuang.blog.entity.Tag;
 import com.jamhuang.blog.entity.Type;
 import com.jamhuang.blog.entity.User;
 import com.jamhuang.blog.service.BlogService;
+import com.jamhuang.blog.service.CommentService;
 import com.jamhuang.blog.service.TagService;
 import com.jamhuang.blog.service.TypeService;
 import com.jamhuang.blog.vo.BlogQuery;
@@ -32,9 +33,13 @@ public class BlogController {
     @Autowired
     private TagService tagService;
 
+    @Autowired
+    private CommentService commentService;
+
     @GetMapping("/blogs")
-    public String blogs(@PageableDefault(size = 2, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String blogs(@PageableDefault(size = 10, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         BlogQuery blog, Model model) {
+        System.out.println(blog.toString());
         model.addAttribute("types", typeService.listType());
         model.addAttribute("page", blogService.listBlog(pageable, blog));
         return "admin/blogs";
@@ -43,6 +48,7 @@ public class BlogController {
     @PostMapping("/blogs/search")
     public String search(@PageableDefault(size = 10, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          BlogQuery blog, Model model) {
+        System.out.println(blog.toString());
         model.addAttribute("page", blogService.listBlog(pageable, blog));
         return "admin/blogs :: blogList";
     }
@@ -93,6 +99,7 @@ public class BlogController {
 
     @GetMapping("/blogs/{id}/delete")
     public String delete(@PathVariable Long id, RedirectAttributes attributes) {
+        commentService.deleteCommentByBlogId(id);
         blogService.deleteBlog(id);
         attributes.addFlashAttribute("message", "删除成功");
         return "redirect:/admin/blogs";

@@ -18,13 +18,8 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import javax.persistence.criteria.*;
+import java.util.*;
 
 @Service
 public class BlogServiceImpl implements BlogService {
@@ -37,6 +32,7 @@ public class BlogServiceImpl implements BlogService {
         return blogRepository.getOne(id);
     }
 
+    @Transactional
     @Override
     public Blog getAndConvert(Long id) {
         Blog blog = blogRepository.getOne(id);
@@ -46,6 +42,7 @@ public class BlogServiceImpl implements BlogService {
         Blog b = new Blog();
         BeanUtils.copyProperties(blog, b);
         b.setContent(MarkdownUtils.markdownToHtmlExtensions(b.getContent()));
+        blogRepository.updateViews(id);
         return b;
     }
 
@@ -72,6 +69,17 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
+    public Page<Blog> listBlog(Long tagId, Pageable pageable) {
+        return blogRepository.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+                Join join = root.join("tags");
+                return cb.equal(join.get("id"), tagId);
+            }
+        }, pageable);
+    }
+
+    @Override
     public Page<Blog> listSearchBlog(String searchContent, Pageable pageable) {
         return blogRepository.findBySearchContent(searchContent, pageable);
     }
@@ -87,6 +95,37 @@ public class BlogServiceImpl implements BlogService {
         Sort sort = Sort.by(Sort.Direction.DESC, "updateTime");
         Pageable pageable = PageRequest.of(0, size, sort);
         return blogRepository.findRecommendTop(pageable);
+    }
+
+    @Override
+    public Map<String, List<Blog>> archiveBlog() {
+        List<String> years = blogRepository.findGroupYear();
+        Map<String, List<Blog>> map = new LinkedHashMap<>();
+        for (String year : years) {
+            map.put(year, blogRepository.findByYear(year));
+        }
+        return map;
+    }
+
+    @Override
+    public Long countBlog() {
+        return blogRepository.count();
+    }
+
+    @Override
+    public Long countBlogByTypeId(Long typeId) {
+        return blogRepository.countBlogByTypeId(typeId);
+    }
+
+    @Override
+    public Long countBlogByTagId(Long tagId) {
+        return blogRepository.count(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
+                Join join = root.join("tags");
+                return cb.equal(join.get("id"), tagId);
+            }
+        });
     }
 
     @Transactional

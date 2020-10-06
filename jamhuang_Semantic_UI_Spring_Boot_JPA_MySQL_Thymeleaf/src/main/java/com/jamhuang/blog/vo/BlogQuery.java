@@ -9,12 +9,6 @@ public class BlogQuery {
     public BlogQuery() {
     }
 
-    public BlogQuery(String title, Long typeId, Boolean recommend) {
-        this.title = title;
-        this.typeId = typeId;
-        this.recommend = recommend;
-    }
-
     public String getTitle() {
         return title;
     }

@@ -13,6 +13,7 @@ public class Blog {
     @GeneratedValue
     private Long id;
     private String title;
+    private String subTitle;
     private String content;
     private String firstPicture;
     private String flag;
@@ -47,24 +48,6 @@ public class Blog {
     public Blog() {
     }
 
-    public Blog(Long id, String title, String content, String firstPicture, String flag, Integer views, boolean appreciation, boolean shareStatement, boolean commentabled, boolean published, boolean recommend, boolean isSave, boolean isDelete, Date createTime, Date updateTime) {
-        this.id = id;
-        this.title = title;
-        this.content = content;
-        this.firstPicture = firstPicture;
-        this.flag = flag;
-        this.views = views;
-        this.appreciation = appreciation;
-        this.shareStatement = shareStatement;
-        this.commentabled = commentabled;
-        this.published = published;
-        this.recommend = recommend;
-        this.isSave = isSave;
-        this.isDelete = isDelete;
-        this.createTime = createTime;
-        this.updateTime = updateTime;
-    }
-
     public Long getId() {
         return id;
     }
@@ -79,6 +62,14 @@ public class Blog {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getSubTitle() {
+        return subTitle;
+    }
+
+    public void setSubTitle(String subTitle) {
+        this.subTitle = subTitle;
     }
 
     public String getContent() {
@@ -252,6 +243,7 @@ public class Blog {
         return "Blog{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
+                ", subTitle='" + subTitle + '\'' +
                 ", content='" + content + '\'' +
                 ", firstPicture='" + firstPicture + '\'' +
                 ", flag='" + flag + '\'' +
@@ -260,7 +252,7 @@ public class Blog {
                 ", shareStatement=" + shareStatement +
                 ", commentabled=" + commentabled +
                 ", published=" + published +
-                ", recommened=" + recommend +
+                ", recommend=" + recommend +
                 ", isSave=" + isSave +
                 ", isDelete=" + isDelete +
                 ", createTime=" + createTime +
@@ -269,6 +261,7 @@ public class Blog {
                 ", tags=" + tags +
                 ", user=" + user +
                 ", comments=" + comments +
+                ", tagIds='" + tagIds + '\'' +
                 '}';
     }
 }

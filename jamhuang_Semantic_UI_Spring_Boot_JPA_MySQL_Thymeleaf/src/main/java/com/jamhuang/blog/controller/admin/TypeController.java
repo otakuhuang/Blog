@@ -1,6 +1,7 @@
 package com.jamhuang.blog.controller.admin;
 
 import com.jamhuang.blog.entity.Type;
+import com.jamhuang.blog.service.BlogService;
 import com.jamhuang.blog.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -23,6 +24,9 @@ public class TypeController {
 
     @Autowired
     private TypeService typeService;
+
+    @Autowired
+    private BlogService blogService;
 
     @GetMapping("/types")
     public String types(@PageableDefault(size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable,
@@ -86,8 +90,13 @@ public class TypeController {
 
     @GetMapping("/types/{id}/delete")
     public String delete(@PathVariable Long id, RedirectAttributes attributes) {
-        typeService.deleteType(id);
-        attributes.addFlashAttribute("message", "删除成功");
+        long count = blogService.countBlogByTypeId(id);
+        if (count == 0) {
+            typeService.deleteType(id);
+            attributes.addFlashAttribute("message", "删除成功");
+        } else {
+            attributes.addFlashAttribute("message", "删除失败, 该分类下存在博客");
+        }
         return "redirect:/admin/types";
     }
 }

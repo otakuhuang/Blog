@@ -1,6 +1,7 @@
 package com.jamhuang.blog.controller;
 
 import com.jamhuang.blog.service.BlogService;
+import com.jamhuang.blog.service.CommentService;
 import com.jamhuang.blog.service.TagService;
 import com.jamhuang.blog.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,11 @@ public class IndexController {
     @Autowired
     private TagService tagService;
 
+    @Autowired
+    private CommentService commentService;
+
     @GetMapping("/")
-    public String index(@PageableDefault(size = 2, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+    public String index(@PageableDefault(size = 10, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                         Model model) {
         model.addAttribute("page", blogService.listBlog(pageable));
         model.addAttribute("types", typeService.listTypeTop(6));
@@ -40,12 +44,20 @@ public class IndexController {
     public String search(@PageableDefault(size = 2, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
                          @RequestParam(value = "search-content") String searchContent, Model model) {
         model.addAttribute("page", blogService.listSearchBlog("%" + searchContent.trim().toLowerCase() + "%", pageable));
+        model.addAttribute("searchContent", searchContent);
         return "search";
     }
 
     @GetMapping("/blog/{id}")
     public String blog(@PathVariable Long id, Model model) {
         model.addAttribute("blog", blogService.getAndConvert(id));
+        model.addAttribute("comments", commentService.listCommentByBlogId(id));
         return "blog";
+    }
+
+    @GetMapping("/blog/newBlogs")
+    public String newBlogs(Model model) {
+        model.addAttribute("newBlogs", blogService.listRecommendBlogTop(3));
+        return "_fragments :: newBlogList";
     }
 }

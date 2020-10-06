@@ -36,7 +36,18 @@
         <div class="ui stackable grid">
             <div class="eleven wide column">
                 <div class="ui segment">
-                    <img src="https://unsplash.it/800/600?image=1005" alt="" class="ui rounded image">
+                    <img src="#" th:src="@{/image/title(128x128).ico}" alt="" class="ui top aligned rounded image">
+                    <span class="typo-h3">JamHuang</span>
+                    <div class="ui divider"></div>
+                    <h3>关于本站</h3>
+                    <p>前端: thymeleaf + Semantic UI</p>
+                    <p>后端: Spring Boot + Hibernate + MySQL</p>
+                    <div class="ui divider"></div>
+                    <h3>唠叨</h3>
+                    <p>看着各位大佬的博客各种好看，心生羡慕，就想着自己也搞一个，目前这个网站是完全按照是「<a target="_blank"
+                            href="https://www.bilibili.com/video/BV1nE411r7TF?p=1">Spring Boot 开发一个小而美的个人博客</a>」
+                        开发的，嘛，虽然看起来比较简陋，但还是会继续完善，将它染成自己的颜色。
+                    </p>
                 </div>
             </div>
             <div class="five wide column">
@@ -44,24 +55,25 @@
                     <div class="ui header">关于我</div>
                 </div>
                 <div class="ui attached segment">
-                    <p class="m-text">测试</p>
-                    <p class="m-text">测试</p>
+                    <p class="m-text">相对于其他事还是更热爱于 Coding，偶尔刷个剧玩个游戏，No Game No Life!!!</p>
                 </div>
                 <div class="ui attached segment">
                     <div class="ui orange basic left pointing label">编程</div>
-                    <div class="ui orange basic left pointing label">写作</div>
                     <div class="ui orange basic left pointing label">思考</div>
+                    <div class="ui orange basic left pointing label">Otaku</div>
                 </div>
                 <div class="ui attached segment">
                     <div class="ui teal basic left pointing label m-margin-tb-tiny">Java</div>
                     <div class="ui teal basic left pointing label m-margin-tb-tiny">JavaScript</div>
-                    <div class="ui teal basic left pointing label m-margin-tb-tiny">Node</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">HTML</div>
                     <div class="ui teal basic left pointing label m-margin-tb-tiny">...</div>
                 </div>
                 <div class="ui bottom attached segment">
-                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
-                    <a href="#" id="wechat" class="ui circular icon button"><i class="weixin icon"></i></a>
-                    <a href="#" id="qq" class="ui circular icon button" data-content="123457"><i class="qq icon"></i></a>
+                    <a href="https://github.com/otakuhuang" target="_blank" id="github" class="ui circular icon button"
+                       data-content="otakuhuang"><i class="github icon"></i></a>
+                    <a href="#" id="wechat" class="ui circular icon button" data-content="zgdbsd_pp"><i
+                            class="weixin icon"></i></a>
+                    <a href="#" id="qq" class="ui circular icon button" data-content="963548963"><i class="qq icon"></i></a>
                 </div>
             </div>
         </div>
@@ -107,8 +119,8 @@
 </footer>
 
 <!--/*/<th:block th:replace="_fragments :: script">/*/-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 <!--/*/</th:block>/*/-->
 
 <script>
@@ -116,6 +128,8 @@
         $('.m-item').toggleClass('m-mobile-hide');
     });
     $('#qq').popup();
+    $('#wechat').popup();
+    $('#github').popup();
 </script>
 </body>
 </html>

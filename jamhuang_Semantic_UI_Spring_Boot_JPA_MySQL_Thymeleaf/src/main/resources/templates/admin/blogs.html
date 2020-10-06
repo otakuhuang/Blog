@@ -61,10 +61,6 @@
                                 <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}"
                                      th:text="${type.name}">错误日志
                                 </div>
-                                <!--/*-->
-                                <div class="item" data-value="2">开发者日志</div>
-                                <div class="item" data-value="3">博客日志</div>
-                                <!--*/-->
                             </div>
                         </div>
                         <button class="ui compact clear button">清除</button>
@@ -102,7 +98,7 @@
                     <td th:text="${blog.type.name}">认知升级</td>
                     <td th:text="${blog.recommend} ? '是' : '否'">是</td>
                     <td th:text="${blog.published} ? '发布' : '草稿'"></td>
-                    <td th:text="${blog.updateTime}">2017-01-01 09:45</td>
+                    <td th:text="${#dates.format(blog.updateTime, 'yyyy-MM-dd HH:mm:ss')}">2017-01-01 09:45</td>
                     <td>
                         <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}"
                            class="ui mini teal basic button">编辑</a>

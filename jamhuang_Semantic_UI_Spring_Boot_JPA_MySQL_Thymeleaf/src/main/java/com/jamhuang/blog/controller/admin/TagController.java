@@ -1,6 +1,7 @@
 package com.jamhuang.blog.controller.admin;
 
 import com.jamhuang.blog.entity.Tag;
+import com.jamhuang.blog.service.BlogService;
 import com.jamhuang.blog.service.TagService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -23,6 +24,9 @@ public class TagController {
 
     @Autowired
     private TagService tagService;
+
+    @Autowired
+    private BlogService blogService;
 
     @GetMapping("/tags")
     public String tags(@PageableDefault(size = 10, sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageable,
@@ -86,8 +90,13 @@ public class TagController {
 
     @GetMapping("/tags/{id}/delete")
     public String delete(@PathVariable Long id, RedirectAttributes attributes) {
-        tagService.deleteTag(id);
-        attributes.addFlashAttribute("message", "删除成功");
+        long count = blogService.countBlogByTagId(id);
+        if (count == 0) {
+            tagService.deleteTag(id);
+            attributes.addFlashAttribute("message", "删除成功");
+        } else {
+            attributes.addFlashAttribute("message", "删除失败，该标签下存在博客");
+        }
         return "redirect:/admin/tags";
     }
 }

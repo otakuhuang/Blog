@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-@Entity(name = "t_comment")
+@Entity
+@Table(name = "t_comment")
 public class Comment {
 
     @Id
@@ -22,21 +23,14 @@ public class Comment {
     private Blog blog;
 
     @OneToMany(mappedBy = "parentComment")
-    private List<Comment> replayComments = new ArrayList<>();
+    private List<Comment> replyComments = new ArrayList<>();
 
     @ManyToOne
     private Comment parentComment;
 
-    public Comment() {
-    }
+    private boolean adminComment;
 
-    public Comment(Long id, String nickname, String email, String content, String avatar, Date createTime) {
-        this.id = id;
-        this.nickname = nickname;
-        this.email = email;
-        this.content = content;
-        this.avatar = avatar;
-        this.createTime = createTime;
+    public Comment() {
     }
 
     public Long getId() {
@@ -95,12 +89,12 @@ public class Comment {
         this.blog = blog;
     }
 
-    public List<Comment> getReplayComments() {
-        return replayComments;
+    public List<Comment> getReplyComments() {
+        return replyComments;
     }
 
-    public void setReplayComments(List<Comment> replayComments) {
-        this.replayComments = replayComments;
+    public void setReplyComments(List<Comment> replayComments) {
+        this.replyComments = replayComments;
     }
 
     public Comment getParentComment() {
@@ -109,6 +103,14 @@ public class Comment {
 
     public void setParentComment(Comment parentComment) {
         this.parentComment = parentComment;
+    }
+
+    public boolean isAdminComment() {
+        return adminComment;
+    }
+
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
     }
 
     @Override
@@ -121,8 +123,9 @@ public class Comment {
                 ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
                 ", blog=" + blog +
-                ", replayComments=" + replayComments +
+                ", replyComments=" + replyComments +
                 ", parentComment=" + parentComment +
+                ", adminComment=" + adminComment +
                 '}';
     }
 }
