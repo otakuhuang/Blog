@@ -43,51 +43,18 @@
         <i class="sidebar icon"></i>
     </a>
 </nav>
-<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-small">
     <div class="ui center aligned container">
-        <div class="ui inverted divided stackable grid">
-            <div class="four wide column">
-                <div class="ui inverted link list">
-                    <div class="item">
-                        <img src="../../static/image/Wa2cover2.jpg" th:src="@{/image/Wa2cover2.jpg}"
-                             class="ui rounded image" alt=""
-                             style="width: 110px; height: 110px;">
-                    </div>
-                </div>
-            </div>
-            <div class="four wide column">
-                <h4 class="ui inverted header">最新博客</h4>
-                <div id="newBlogs-container">
-                    <div class="ui inverted link list" th:fragment="newBlogList">
-                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" class="item" th:each="blog : ${newBlogs}"
-                           th:text="${blog.title}">博客</a>
-                    </div>
-                </div>
-            </div>
-            <div class="four wide column">
-                <h4 class="ui inverted header">联系我</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item" th:text="#{footer.email}">Email</a>
-                    <a href="#" class="item" th:text="#{footer.qq}">QQ</a>
-                </div>
-            </div>
-            <div class="four wide column">
-                <h4 class="ui inverted header">Blog</h4>
-                <p class="m-text-thin m-text-spaced m-opacity-mini">果然我还是喜欢编程呀~</p>
-            </div>
-        </div>
-        <div class="ui inverted section divider">
-            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright ©&nbsp;2020-<span
-                    th:text="${#dates.format(new java.util.Date().getTime(), 'yyyy')}">2021</span>&nbsp;JamhuangBlog
-                Designed Jamhuang</p>
-            <p class="m-text-thin m-text-spaced m-opacity-tiny">
-                <a href="https://www.beian.miit.gov.cn/" target="_blank">闽ICP备20001960号-1</a>
-                <img src="http://www.beian.gov.cn/portal/download?token=9c7e99bd-024d-4cf0-bd9c-c1408d93cef2"
-                     class="ui middle aligned image" alt="">
-                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35012102200219" target="_blank">闽公网安备
-                    35012102200219号</a>
-            </p>
-        </div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright ©&nbsp;2020-<span
+                th:text="${#dates.format(new java.util.Date().getTime(), 'yyyy')}">2021</span>&nbsp;JamhuangBlog
+            Designed Jamhuang</p>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">
+            <a href="https://www.beian.miit.gov.cn/" target="_blank">闽ICP备20001960号-1</a>
+            <img src="http://www.beian.gov.cn/portal/download?token=9c7e99bd-024d-4cf0-bd9c-c1408d93cef2"
+                 class="ui middle aligned image" alt="">
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=35012102200219" target="_blank">闽公网安备
+                35012102200219号</a>
+        </p>
     </div>
 </footer>
 <th:block th:fragment="script">

@@ -36,7 +36,7 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Blog getAndConvert(Long id) {
         Blog blog = blogRepository.getOne(id);
-        if (blog == null) {
+        if (Objects.equals(blog, null)) {
             throw new NotFoundException("该博客不存在");
         }
         Blog b = new Blog();

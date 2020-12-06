@@ -17,7 +17,7 @@ class BlogApplicationTests {
 
     @Test
     void contextLoads() {
-        String pwd = "123456";
+        String pwd = "LswR$B3bt9vQHcs#";
         System.out.println(DigestUtils.md5DigestAsHex(pwd.getBytes()));
     }
 }
