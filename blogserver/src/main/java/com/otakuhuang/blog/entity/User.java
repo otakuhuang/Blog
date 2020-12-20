@@ -1,14 +1,18 @@
 package com.otakuhuang.blog.entity;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 public class User {
     private Long id;
     private String username;
     private String email;
     private String avatar;
-    private String type;
+    private Integer type;
     private String password;
+    private Boolean enabled;
     private Date createTime;
     private Date updateTime;
 
@@ -47,12 +51,16 @@ public class User {
         this.avatar = avatar;
     }
 
-    public String getType() {
+    public Integer getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Integer type) {
         this.type = type;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
     }
 
     public String getPassword() {
@@ -61,6 +69,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
     }
 
     public Date getCreateTime() {

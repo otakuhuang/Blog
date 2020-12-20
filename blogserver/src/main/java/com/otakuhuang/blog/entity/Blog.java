@@ -2,17 +2,34 @@ package com.otakuhuang.blog.entity;
 
 import org.springframework.lang.NonNull;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import java.io.Serial;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Blog {
+public class Blog implements Serializable {
+
+    @Serial
+    private static final long serialVersionUID = 1364684376907970518L;
 
     private Long id;
+    @Size(min = 1, message = "标题不能为空")
+    @NotNull(message = "标题不能为空")
     private String title;
+    @Size(min = 1, message = "副标题不能为空")
+    @NotNull(message = "副标题不能为空")
     private String subTitle;
+    @Size(min = 1, message = "标志不能为空")
+    @NotNull(message = "标志不能为空")
     private String flag;
+    @Size(min = 1, message = "首图不能为空")
+    @NotNull(message = "首图不能为空")
     private String firstPicture;
+    @Size(min = 1, message = "内容不能为空")
+    @NotNull(message = "内容不能为空")
     private String content;
     private boolean appreciation;
     private boolean published;
@@ -20,18 +37,17 @@ public class Blog {
     private boolean recommend;
     private boolean shareStatement;
     private Long views;
+    @NotNull(message = "分类不能为空")
     private Long typeId;
-//    private List<Tag> tags = new ArrayList<>();
+    //    private List<Tag> tags = new ArrayList<>();
+    @NotNull(message = "用户不能为空")
     private Long userId;
-//    private List<Comment> comments = new ArrayList<>();
+    //    private List<Comment> comments = new ArrayList<>();
 //    private String tagIds;
     private boolean isSave;
     private boolean isDelete;
     private Date createTime;
     private Date updateTime;
-
-    public Blog() {
-    }
 
     public Long getId() {
         return id;
@@ -129,6 +145,22 @@ public class Blog {
         this.views = views;
     }
 
+    public Long getTypeId() {
+        return typeId;
+    }
+
+    public void setTypeId(Long typeId) {
+        this.typeId = typeId;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
     public boolean isSave() {
         return isSave;
     }
@@ -176,6 +208,8 @@ public class Blog {
                 ", recommend=" + recommend +
                 ", shareStatement=" + shareStatement +
                 ", views=" + views +
+                ", typeId=" + typeId +
+                ", userId=" + userId +
                 ", isSave=" + isSave +
                 ", isDelete=" + isDelete +
                 ", createTime=" + createTime +

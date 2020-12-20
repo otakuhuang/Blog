@@ -1,4 +1,4 @@
-package com.otakuhuang.blog.dao;
+package com.otakuhuang.blog.mapper;
 
 import com.otakuhuang.blog.entity.Blog;
 import org.apache.ibatis.annotations.*;
@@ -60,6 +60,35 @@ public interface BlogMapper {
             @Result(column = "update_time", property = "updateTime")
     })
     List<Blog> findAllBlog();
+
+
+    @Select("SELECT id, title, sub_title, flag, first_picture, content, appreciation, published, commentabled, recommend," +
+            "share_statement, views, type_id, user_id, is_save, is_delete, create_time, update_time " +
+            "FROM t_blog LIMIT #{currentPage}, #{pageSize}")
+    @Results({
+            @Result(column = "id", property = "id"),
+            @Result(column = "title", property = "title"),
+            @Result(column = "sub_title", property = "subTitle"),
+            @Result(column = "flag", property = "flag"),
+            @Result(column = "first_picture", property = "firstPicture"),
+            @Result(column = "content", property = "content"),
+            @Result(column = "appreciation", property = "appreciation"),
+            @Result(column = "published", property = "published"),
+            @Result(column = "commentabled", property = "commentabled"),
+            @Result(column = "recommend", property = "recommend"),
+            @Result(column = "share_statement", property = "shareStatement"),
+            @Result(column = "views", property = "views"),
+            @Result(column = "type_id", property = "typeId"),
+            @Result(column = "user_id", property = "userId"),
+            @Result(column = "is_save", property = "isSave"),
+            @Result(column = "is_delete", property = "isDelete"),
+            @Result(column = "create_time", property = "createTime"),
+            @Result(column = "update_time", property = "updateTime")
+    })
+    List<Blog> findBlogByPage(int currentPage, int pageSize);
+
+    @Select("SELECT COUNT(*) FROM t_blog")
+    int getBlogCount();
 
     @Insert("INSERT INTO t_blog(title,sub_title,flag,first_picture,content,appreciation,published,commentabled,recommend," +
             "share_statement,views,type_id,user_id,is_save,is_delete) " +

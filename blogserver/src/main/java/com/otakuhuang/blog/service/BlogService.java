@@ -1,8 +1,10 @@
 package com.otakuhuang.blog.service;
 
+import com.github.pagehelper.PageInfo;
 import com.otakuhuang.blog.entity.Blog;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BlogService {
 
@@ -10,7 +12,9 @@ public interface BlogService {
 
     List<Blog> selectAllBlog();
 
-    void addBlog(Blog blog);
+    Map<String, Object> selectBlogByPage(int currentPage);
+
+    String addBlog(Blog blog);
 
     void modifyBlogById(Blog blog);
 
