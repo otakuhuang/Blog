@@ -11,6 +11,9 @@ spring:
     show-sql: true
     database: mysql
 
+  thymeleaf:
+    cache: false
+
 logging:
   level:
     root: info

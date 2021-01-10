@@ -1,9 +1,6 @@
 package com.jamhuang.blog.controller;
 
-import com.jamhuang.blog.service.BlogService;
-import com.jamhuang.blog.service.CommentService;
-import com.jamhuang.blog.service.TagService;
-import com.jamhuang.blog.service.TypeService;
+import com.jamhuang.blog.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -29,6 +26,9 @@ public class IndexController {
 
     @Autowired
     private CommentService commentService;
+
+    @Autowired
+    private SettingsService settingsService;
 
     @GetMapping("/")
     public String index(@PageableDefault(size = 10, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
@@ -59,5 +59,11 @@ public class IndexController {
     public String newBlogs(Model model) {
         model.addAttribute("newBlogs", blogService.listRecommendBlogTop(3));
         return "_fragments :: newBlogList";
+    }
+
+    @GetMapping("/beian")
+    public String beian(Model model) {
+        model.addAttribute("beian", settingsService.settings());
+        return "_fragments :: beianList";
     }
 }
