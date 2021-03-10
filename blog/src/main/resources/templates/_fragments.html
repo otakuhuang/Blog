@@ -51,8 +51,8 @@
             <p class="m-text-thin m-text-spaced m-opacity-tiny">
                 <a href="https://beian.miit.gov.cn/" target="_blank" th:each="item : ${beian}" th:if="${item.value != null}" th:href="@{${item.remark}}"
                    th:text="${item.value}">ICP备案号</a>
+            </p>
         </div>
-        </p>
     </div>
 </footer>
 <th:block th:fragment="script">
